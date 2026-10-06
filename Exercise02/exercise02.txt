@@ -1,1 +1,1 @@
-
+#pragma omp single allows only one thread in the parallel region to execute the single block. The other threads skip that block. In this program, only one thread prints Inside Single and Exiting Single, while all threads execute the final Hi again statement.

@@ -1,0 +1,1 @@
+#pragma omp barrier creates a synchronization point. Every thread must reach the barrier before any thread can continue executing the statements after it. In this program, all threads first print their thread number, wait at the barrier, and then continue with the Outside Barrier and Hi again statements.

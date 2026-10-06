@@ -1,0 +1,1 @@
+Strip mining divides a large array into smaller fixed-size blocks called strips. In this program, each strip contains 8 elements. OpenMP distributes the strips among multiple threads using parallel for, and each thread performs the element-wise multiplication C[i] = A[i] * B[i] for its assigned strips. This improves parallel work distribution and can help SIMD/vector processing.

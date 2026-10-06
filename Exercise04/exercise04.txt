@@ -1,1 +1,3 @@
+With #pragma omp parallel for, OpenMP parallelizes only the outer loop. The five r iterations are distributed among the available threads. Each thread executes the complete inner k loop for the r iteration assigned to it.
 
+With collapse(2), OpenMP combines the two nested loops into one iteration space. Therefore, all 50 (r, k) iterations can be distributed among the available threads instead of parallelizing only the five outer-loop iterations. This can provide better work distribution among threads.

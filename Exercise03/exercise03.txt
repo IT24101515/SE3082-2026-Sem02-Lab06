@@ -1,1 +1,1 @@
-
+#pragma omp master makes only the master thread, which is thread 0, execute the specified block. Other threads skip the master block and continue with the following statements. In this program, only thread 0 prints Inside Master and Exiting Master, while all threads print the final Hi again message.
